@@ -20,7 +20,7 @@ title                    : "jinny in dev life"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "jinny"
-description              : "Make haste slowly :-)"
+description              : "지극히 개인적인 블로그. 개발 공부, 생각과 일상을 기록하는 곳입니다."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -109,8 +109,8 @@ analytics:
 author:
   name             : "JINNY"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Make haste slowly :-)"
-  location         : "Somewhere"
+  bio              : "지극히 개인적인 블로그. 개발 공부, 생각과 일상을 기록하는 곳입니다."
+  location         : "Korea"
   email            :
   links:
     - label: "Email"
@@ -290,6 +290,14 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
+
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
