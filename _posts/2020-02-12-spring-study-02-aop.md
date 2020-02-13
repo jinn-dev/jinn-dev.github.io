@@ -18,8 +18,7 @@ A.java -> (AOP) -> A.class
 2. 바이트코드 조작
 A.java -> A.class -> (AOP) - 메모리(AspectJ)
 
-Aspect란?
-부가기능을 정의한 코드인 Advice와 Advice를 어디에 적용할 지 결정하는 PointCut을 합친 개념
-AOP 개념을 적용하면 핵심기능에서 사용된 부가기능을 독립적인 Aspect로 구분해 낼 수 있다.
-
 3. 프록시패턴 (스프링 AOP가 사용하는 방법)
+
+**Aspect란?** 부가기능을 정의한 코드인 Advice와 Advice를 어디에 적용할 지 결정하는 PointCut을 합친 개념이다. AOP 개념을 적용하면 핵심기능에서 사용된 부가기능을 독립적인 Aspect로 구분해 낼 수 있다.
+{: .notice--info}
