@@ -4,7 +4,7 @@ categories:
   - Spring
 last_modified_at: 2020-02-12T22s:00:00+09:00
 toc: true
-comments: true
+comments: false
 ---
 ## 스프링 빈(Bean)
 객체인데, IoC 컨테이너가 관리하는 객체를 빈이라고 한다.
