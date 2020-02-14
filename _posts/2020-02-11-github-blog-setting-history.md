@@ -39,11 +39,11 @@ gem "minimal-mistakes-jekyll"
 $ bundle
 ```
 
-### \_config.yml 수정
-`\_config.yml`은 테마 기본 설정 파일인데 주로 Site Settings, minimal_mistakes_skin, Site Author, Search 및 Comments 기능 활성화 등을 수정한 것 같다.
+### _config.yml 수정
+`_config.yml`은 테마 기본 설정 파일인데 주로 Site Settings, minimal_mistakes_skin, Site Author, Search 및 Comments 기능 활성화 등을 수정한 것 같다.
 
-### \_posts, \_pages 폴더 생성
-`_posts`, `\_pages` 폴더가 없다면 생성하자. `\_posts`는 포스트 파일들이 담길 곳이고 `\_pages`는 단순 페이지 파일이 담길 곳이다.
+### _posts, _pages 폴더 생성
+`_posts`, `_pages` 폴더가 없다면 생성하자. `_posts`는 포스트 파일들이 담길 곳이고 `_pages`는 단순 페이지 파일이 담길 곳이다.
 
 ### Navigation 설정
 헤더 부분에 표시될 메뉴를 설정하는 파일은 `_data/navigation.yml`이다. 난 아래 내용으로 수정했다.
@@ -58,7 +58,7 @@ main:
     url: /categories/
 ```
 
-그리고 `\_pages` 폴더에 아래 파일을 추가한다.
+그리고 `_pages` 폴더에 아래 파일을 추가한다.
 
 `category-archive.md`
 ```javascript
@@ -83,7 +83,7 @@ author_profile: true
 
 
 ### 포스팅 하는 방법
-`\_posts` 폴더에 `YYYY-MM-DD-제목(영어로).md` 형식으로 파일 생성 후 파일 헤더에 아래 내용을 입력하고 마크다운 형식으로 글을 작성한다. 마크다운 문법도 처음 써보는데 완전 어색하다..    
+`_posts` 폴더에 `YYYY-MM-DD-제목(영어로).md` 형식으로 파일 생성 후 파일 헤더에 아래 내용을 입력하고 마크다운 형식으로 글을 작성한다. 마크다운 문법도 처음 써보는데 완전 어색하다..    
 
 ```javascript
 ---
@@ -102,7 +102,7 @@ toc: true
 $ bundle exec jekyll serve
 ```
 
-`http://localhost:4000`으로 접속할 수 있따. 포스트 수정은 실시간으로 볼 수 있지만 \_config.yml 파일 수정 시 재기동 해야한다.    
+`http://localhost:4000`으로 접속할 수 있따. 포스트 수정은 실시간으로 볼 수 있지만 _config.yml 파일 수정 시 재기동 해야한다.    
 
 ### 원격 레파지토리에 적용하기
 commit까지 했다면, 정상적으로 push 후 fetch까지 하면 원격 레파지토리에 적용 완료:)
