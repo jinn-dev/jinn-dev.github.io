@@ -2,7 +2,7 @@
 title: "minimal mistakes 테마로 github.io 블로그 생성하기"
 categories:
   - Github
-last_modified_at: 2020-02-12T22s:00:00+09:00
+last_modified_at: 2020-02-11T22s:00:00+09:00
 toc: true
 comments: false
 ---
@@ -102,7 +102,7 @@ toc: true
 $ bundle exec jekyll serve
 ```
 
-`http://localhost:4000`으로 접속할 수 있따. 포스트 수정은 실시간으로 볼 수 있지만 _config.yml 파일 수정 시 재기동 해야한다.    
+`http://localhost:4000`으로 접속할 수 있다. 포스트 수정은 실시간으로 볼 수 있지만 _config.yml 파일 수정 시 재기동 해야한다.    
 
 ### 원격 레파지토리에 적용하기
 commit까지 했다면, 정상적으로 push 후 fetch까지 하면 원격 레파지토리에 적용 완료:)
