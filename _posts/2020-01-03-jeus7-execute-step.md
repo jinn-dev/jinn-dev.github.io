@@ -14,31 +14,31 @@ comments: false
 - jeusadmin 주소: http://127.0.0.1:9736
 
 ### DAS 기동    
-```console
+```smalltalk
 startDomainAdminServer -u administrator -p jeusadmin
 ```
 위 명령어로 `dsboot`이름의 실행스크립트를 만든다.
 
 ### DAS 다운
-```console
+```smalltalk
 stopServer -host localhost:9736 -u administrator -p jeusadmin
 ```
 위 명령어로 `dsdown`이름의 실행스크립트를 만든다.
 
 ### jeusadmin 접속
-```console
+```smalltalk
 jeusadmin -u administrator -p jeusadmin
 ```
 위 명령어로 `jaboot`이름의 실행스크립트를 만든다.
 
 ### 서버 기동
-```console
+```smalltalk
 startManagedServer -server rengine_1 -u administrator -p jeusadmin
 ```
 위 명령어로 `msboot_rengine1`이름의 실행스크립트를 만든다.
 
 ### 노드매니저 기동
-```console
+```smalltalk
 startNodeManager
 ```
 위 명령어로 `nmboot`이름의 실행스크립트를 만든다.    
@@ -52,7 +52,7 @@ default server port: 9796
 
 (1) DataSource 추가    
 * 콘솔에서 DataSource 연결 확인
-```console
+```smalltalk
 jeusadmin> testdsconfig renginepool
 Configuration is valid. You can use it.
 ```
@@ -122,11 +122,11 @@ Configuration is valid. You can use it.
 `DOCROOT = literal WebtoB` 가 Web을 통해 서비스 하는 모든 문서를 포함하는 루트 디렉토리의 경로이다. 즉, WebtoB 는 `DOCROOT`가 지정한 디렉토리를 최상위로 하여 문서를 서비스하게 된다. Client가 요구한 URL은 `DOCROOT`의 경로 뒤에 추가되어 실제 경로명을 이루게 된다. WebtoB는 이 경로를 가지고 파일에 접근하게 된다.
 
 #### webtob 기동 확인 방법
-```console
+```smalltalk
 ps -ef | grep htl
 ```
 
 #### webtob 기타
-* webtob 연동 매뉴얼 [link](https://technet.tmaxsoft.com/upload/download/online/jeus/pver-20140827-000001/getting-started/chapter_jeus_system_configuration.html).
+* [webtob 연동 매뉴얼](https://technet.tmaxsoft.com/upload/download/online/jeus/pver-20140827-000001/getting-started/chapter_jeus_system_configuration.html)
 
-* webtob 보안(cf. SSL) [link](https://technet.tmaxsoft.com/upload/download/online/webtob/pver-20150203-000001/administrator/ch08.html#d4e12450).
+* [webtob 보안(cf. SSL)](https://technet.tmaxsoft.com/upload/download/online/webtob/pver-20150203-000001/administrator/ch08.html#d4e12450)

@@ -12,13 +12,13 @@ comments: false
 업무에선 cvs에서 svn만 써봤지, github는 개인적으로만 접해와서 알아야 할게 생각보다 많았다. 나중에 또 까먹을 경우를 대비해서 기록해야지.
 
 ### 루비 설치하기
-난 가장 최신버전인 2.7.0 버전을 설치했다. [link](https://rubyinstaller.org/downloads/)
+난 가장 최신버전인 2.7.0 버전을 설치했다. [루비 다운로드](https://rubyinstaller.org/downloads/)
 
 ### 블로그 테마 적용하기
 가장 유명한 것 같은 "Minimal Mistakes" 테마로 선택했다.    
 
-* Minimal Mistakes Github [link](https://github.com/mmistakes/minimal-mistakes)
-* Minimal Mistakes Demo Page [link](https://mmistakes.github.io/minimal-mistakes/)
+* [Minimal Mistakes Github](https://github.com/mmistakes/minimal-mistakes)
+* [Minimal Mistakes Demo Page](https://mmistakes.github.io/minimal-mistakes/)
 
 적용하는 방법을 찾아보니 해당 테마 Repository를 fork, clone, zip 하는 방법이 있는데
 다 시도해본 결과 zip으로 설치하는게 가장 쉬웠다. (나한테는ㅎㅎ) fork 하는 방법이 쉽다는데 git 넘 어려웡.. 아래 사이트에서 release 된 버전을 로컬에 다운로드 받는다. 폴더명을 username.github.io로 변경하고, 내 레파지토리로 올리기 전에 불필요한 파일은 삭제하자. Atom 기준으로 Git Toggle에서 해당 폴더를 Initialize and publish 해주자.     
@@ -39,10 +39,10 @@ gem "minimal-mistakes-jekyll"
 $ bundle
 ```
 
-### _config.yml 수정
+### 	&#95;config.yml 수정
 `_config.yml`은 테마 기본 설정 파일인데 주로 Site Settings, minimal_mistakes_skin, Site Author, Search 및 Comments 기능 활성화 등을 수정한 것 같다.
 
-### _posts, _pages 폴더 생성
+### &#95;posts, &#95;pages 폴더 생성
 `_posts`, `_pages` 폴더가 없다면 생성하자. `_posts`는 포스트 파일들이 담길 곳이고 `_pages`는 단순 페이지 파일이 담길 곳이다.
 
 ### Navigation 설정
@@ -102,7 +102,7 @@ toc: true
 $ bundle exec jekyll serve
 ```
 
-`http://localhost:4000`으로 접속할 수 있다. 포스트 수정은 실시간으로 볼 수 있지만 _config.yml 파일 수정 시 재기동 해야한다.    
+`http://localhost:4000`으로 접속할 수 있다. 포스트 수정은 실시간으로 볼 수 있지만 &#95;config.yml 파일 수정 시 재기동 해야한다.    
 
 ### 원격 레파지토리에 적용하기
 commit까지 했다면, 정상적으로 push 후 fetch까지 하면 원격 레파지토리에 적용 완료:)
