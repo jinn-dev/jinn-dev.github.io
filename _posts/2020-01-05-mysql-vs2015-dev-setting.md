@@ -8,7 +8,7 @@ comments: false
 ---
 
 ### Intro
-- MySQL 설치경로: C:\Program Files\MySQL\MySQL Server 5.7
+- MySQL 설치경로: `C:\Program Files\MySQL\MySQL Server 5.7`
 - Visual Studio 2015 설치 버전은 Professional 영문판 기준
 
 ### 프로젝트 속성 설정

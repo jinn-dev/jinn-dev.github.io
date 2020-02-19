@@ -56,7 +56,6 @@ default server port: 9796
 jeusadmin> testdsconfig renginepool
 Configuration is valid. You can use it.
 ```
-출처: http://swdev.tistory.com/10 [소프트웨어 개발 이야기]
 
 
 (2) Server 추가 후 Start    
@@ -126,7 +125,7 @@ Configuration is valid. You can use it.
 ps -ef | grep htl
 ```
 
-#### webtob 기타
+#### webtob 기타 참고 링크
 * [webtob 연동 매뉴얼](https://technet.tmaxsoft.com/upload/download/online/jeus/pver-20140827-000001/getting-started/chapter_jeus_system_configuration.html)
 
 * [webtob 보안(cf. SSL)](https://technet.tmaxsoft.com/upload/download/online/webtob/pver-20150203-000001/administrator/ch08.html#d4e12450)
