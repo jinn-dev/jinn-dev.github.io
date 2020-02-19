@@ -17,8 +17,7 @@ $ unlimit -a
 ```smalltalk
 $ unlimit -a unlimited
 ```
-해당 명령어는 root만 가능하고 현재 터미널만 적용되므로 영구적으로 적용시키려면    
-따로 설정을 해줘야 함
+해당 명령어는 root만 가능하고 현재 터미널만 적용되므로 영구적으로 적용시키려면 따로 설정을 해줘야 함
 ​
 3. 컴파일 할때 디버깅 옵션 추가
 `-g`와 `-ggdb` 옵션 추가함
@@ -36,7 +35,7 @@ dbx로 Running Process 디버깅하기
 
 
 1. 필요 시 파일 바이너리 확인    
-``smalltalk
+```smalltalk
 $ file core이름
 ​```
 
