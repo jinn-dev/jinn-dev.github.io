@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko"
-title                    : "jinny in dev life"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+title                    : "seize the moment"
+title_separator          : ""
+subtitle                 : "jinny in dev life" # site tagline that appears below site title in masthead
 name                     : "jinny"
 description              : "지극히 개인적인 블로그. 개발 공부, 생각과 일상을 기록하는 곳입니다."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
