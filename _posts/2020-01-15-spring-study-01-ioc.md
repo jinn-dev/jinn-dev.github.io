@@ -13,9 +13,9 @@ IoC 기능을 제공하는 컨테이너로 Bean 들을 담고 있다.
 객체인데, IoC 컨테이너가 관리하는 객체를 빈이라고 한다. 의존성 주입을 하기 위해서 Bean이 되어야 한다.
 <br/><br/>
 ## Bean Scope
-1. SingleTon
+1. SingleTon    
 default. 하나의 객체로만 사용
-2. ProtoType 
+2. ProtoType     
 `@Scope("prototype")`을 선언하면 호출할 때마다 매번 다른 객체를 사용
 <br/><br/>
 
