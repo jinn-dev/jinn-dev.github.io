@@ -15,12 +15,14 @@ IoC 기능을 제공하는 컨테이너로 Bean 들을 담고 있다.
 ## Bean Scope
 1. SingleTon
 default. 하나의 객체로만 사용
-2. ProtoType
-` @Scope("prototype")`을 선언하면 호출할 때마다 매번 다른 객체를 사용
+2. ProtoType 
+`@Scope("prototype")`을 선언하면 호출할 때마다 매번 다른 객체를 사용
 <br/><br/>
+
 ## 의존성 주입(DI, Dependency Injection)
 <br/><br/>
 오로지 Bean만 의존성 주입을 해준다. 객체 자체가 아니라 프레임워크에 의해 객체의 의존성이 주입되는 설계 패턴. 필요한 게 있으면 직접 찾거나 만드는 대신 무엇이 필요하다고 선언만 하면 컨테이너에서 알아서 제공해주겠다는 의미. instance의 생성 및 관리 주체가 사용자(나)가 아니라 컨테이너가 되어 <b>제어의 역전(Inversion Of Control)</b>이 되고 이 방법론 중에 하나로 DI가 있다.
+<br/><br/>
 ## Bean 등록하는 방법
 ### xml에 Bean 등록하기 (1) Bean을 하나하나 다 등록
 ```java
