@@ -241,4 +241,4 @@ url이 아니라 제목으로 보이게 하려면
 
 
 ## references
-https://github.com/mmistakes/minimal-mistakes
+<https://github.com/mmistakes/minimal-mistakes>
