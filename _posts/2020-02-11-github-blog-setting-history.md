@@ -12,7 +12,21 @@ comments: false
 업무에선 cvs에서 svn만 써봤지, github는 개인적으로만 접해와서 알아야 할게 생각보다 많았다. 나중에 또 까먹을 경우를 대비해서 기록해야지.
 
 ### 루비 설치하기
-난 가장 최신버전인 2.7.0 버전을 설치했다. [루비 다운로드](https://rubyinstaller.org/downloads/)
+난 가장 최신버전인 2.7.0 버전을 설치했다. [루비 설치파일 다운로드](https://rubyinstaller.org/downloads/)
+
+설치가 완료되면 MSYS2를 설치하라는 화면이 자동으로 나오는데 1,2,3을 순서대로 입력하여 모두 설치한다.
+![주석 2020-03-04 182317](/assets/주석%202020-03-04%20182317.png)
+
+### Jekyll Framework 설치하기
+루비 설치를 끝냈으면 명령 프롬포트에서 아래 명령어를 실행한다.
+```smalltalk
+$ gem install jekyll bundler
+```
+
+그리고 아래 명령어로 설치가 제대로 됐는지 확인
+```smalltalk
+$ jekyll -v
+```
 
 ### 블로그 테마 적용하기
 가장 유명한 것 같은 "Minimal Mistakes" 테마로 선택했다.    
