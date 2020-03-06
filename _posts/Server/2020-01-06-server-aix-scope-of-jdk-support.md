@@ -10,7 +10,7 @@ AIX JAVA JDK는 RISC 형태라 JAVA 공식홈에서 설치본 제공 안하므�
 
 ### JDK 지원 범위    
 AIX 5.3에서 JAVA 1.7 지원안하는데 설치하려고 뻘짓함^^ 버전 지원 유무 먼저 확인
-![image](/assets/image.png)
+![image](/assets/images/image.png)
 ### 설치 방법
 
 1. 아래 링크에서 IBM 로그인
