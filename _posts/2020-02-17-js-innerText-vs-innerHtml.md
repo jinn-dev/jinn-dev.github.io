@@ -15,6 +15,7 @@ document.getElementById("content").innerText = str;
 
 <div id="content"></div>
 ```
+
 `innerHTML`은 태그 형식이 적용되어 나타나고, `innerText`는 텍스트 그대로 출력된다.
 <br>
 
@@ -30,6 +31,7 @@ el.innerHTML = name; // harmless in this case
 name = "<script>alert('I am John in an annoying alert!')</script>";
 el.innerHTML = name; // harmless in this case
 ```
+
 HTML5에서는 `innerHTML`로 삽입된 `<script>` 태그가 실행되지 않도록 지정한다. 하지만 `<script>`외 다른 태그로 자바스크립트를 실행하는 방법이 있기 때문에 `innerHTML`을 사용하여 제어할 수 없는 문자열 설정 시 보안위험이 있다. 따라서 일반 텍스트 삽입 시 `innerHTML`은 사용하지 않는 것이 좋다.
 ### references
 [
