@@ -129,7 +129,7 @@ console.log(`${plus} ${minus} ${div} ${mul} ${pow}`);
 브라우저에서는 HTML 코드를 DOM(Document Object Model)이라는 객체 형태의 모델로 저장한다. 그리고 JS으로 HTML Document에 접근할 수 있다.
 `document.getElementById`로 HTML 태그 ID 정보로 찾을 수도 있고, `document.querySelector()`로 DOM을 주로 찾는다. getElementById의 상위 버전.    
 
-```javaScript
+```javascript
 //HTML을 DOM 객체로 변경
 const title = document.querySelector("#title");
 //const title = document.getElementById("title");
