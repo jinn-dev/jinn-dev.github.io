@@ -7,7 +7,7 @@ toc: true
 comments: false
 ---
 ※ 간단한 예제 소스
-```javaScript
+```javascript
 var str = '<input type=text" placeholder="What is your name"/>';
 
 document.getElementById("content").innerHTML = str;
@@ -21,7 +21,7 @@ document.getElementById("content").innerText = str;
 
 `innerHTML`이 웹 페이지에 텍스트 삽입하는 데 사용하는 경우가 종종 있다. 이는 사이트 공격 경로가 되어 잠재적인 보안 위험이 발생할 수 있다. (프로젝트 소스 보안 점검 시 보안 취약성에 걸릴 확률 높음)
 
-```javaScript
+```javascript
 const name = "John";
 // assuming 'el' is an HTML DOM element
 el.innerHTML = name; // harmless in this case
