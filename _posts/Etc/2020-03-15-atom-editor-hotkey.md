@@ -73,3 +73,6 @@ HTML, CSS, JavaScript 등의 코드를 분석해서 문법과 유효성 검증�
 
 ### [Sublime Style Column Selection](https://atom.io/packages/Sublime-Style-Column-Selection)
 `alt` 클릭한 상태에서 드래그하면 세로로 선택 가능하다. 열 편집을 할 수 있게 만들어 주는 플러그인
+
+### [platformio-ide-terminal](https://atom.io/packages/platformio-ide-terminal)
+`ctrl+백틱` 아톰 내에서 터미널을 사용할 수 있다.

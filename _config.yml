@@ -15,7 +15,7 @@ remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "ko"
+locale                   : #"ko"
 title                    : "하루는 성실하게 인생은 되는대로"
 title_separator          : ""
 subtitle                 : "jinny in dev life" # site tagline that appears below site title in masthead
@@ -111,7 +111,7 @@ author:
   avatar           : "/assets/images/KakaoTalk_20200213_204220665.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "지극히 개인적인 블로그. 개발 공부, 생각과 일상을 기록하는 곳입니다."
   location         : "Korea"
-  email            :
+  email            : gsbyyy@naver.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -127,7 +127,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/jinn-dev"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
