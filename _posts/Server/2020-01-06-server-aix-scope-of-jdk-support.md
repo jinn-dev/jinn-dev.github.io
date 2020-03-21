@@ -3,6 +3,7 @@ title: AIX 버전별 JDK 지원 범위 확인 및 설치 방법
 categories:
   - Unix
 last_modified_at: 2020-01-06T22s:00:00+09:00
+classes: wide
 toc: true
 comments: false
 ---

@@ -3,6 +3,7 @@ title: OS별 버전 정보 확인 명령어
 categories:
   - Unix
 last_modified_at: 2020-01-06T22s:00:00+09:00
+classes: wide
 toc: true
 comments: false
 ---

@@ -3,6 +3,7 @@ title: "Java Garbage Collection"
 categories:
   - Java
 last_modified_at: 2020-02-01T22s:00:00+09:00
+classes: wide
 toc: true
 comments: false
 ---

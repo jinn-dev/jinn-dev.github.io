@@ -3,6 +3,7 @@ title: "스프링 프레임워크 입문(백기선) - AOP"
 categories:
   - Spring
 last_modified_at: 2020-01-15T22s:00:00+09:00
+classes: wide
 toc: true
 comments: false
 ---

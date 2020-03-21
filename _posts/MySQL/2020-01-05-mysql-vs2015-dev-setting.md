@@ -3,6 +3,7 @@ title: "MySQL VS2015 개발 환경 설정 정리"
 categories:
   - MySQL
 last_modified_at: 2020-01-05T22s:00:00+09:00
+classes: wide
 toc: true
 comments: false
 ---

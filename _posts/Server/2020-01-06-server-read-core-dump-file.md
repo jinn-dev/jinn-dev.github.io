@@ -3,6 +3,7 @@ title: "core 파일 분석 방법 - gdb, dbx"
 categories:
   - Unix
 last_modified_at: 2020-01-06T22s:00:00+09:00
+classes: wide
 toc: true
 comments: false
 ---
