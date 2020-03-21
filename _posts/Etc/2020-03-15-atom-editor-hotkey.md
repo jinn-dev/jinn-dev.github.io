@@ -5,7 +5,7 @@ categories:
 last_modified_at: 2020-03-15T22s:00:00+09:00
 classes: wide
 toc: true
-comments: false
+comments: true
 ---
 ## 아톰이란?
 오픈소스로 관리되고 100% 무료인 코딩 에디팅 툴

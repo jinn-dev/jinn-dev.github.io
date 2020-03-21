@@ -4,7 +4,7 @@ categories:
   - Spring
 last_modified_at: 2020-02-15T22s:00:00+09:00
 toc: false
-comments: false
+comments: true
 ---
 Maven에서 Dependency를 처음 추가하려고 하는데 검색이 안되는 경우는 다음과 같은 설정을 해줘야 한다.     
 `Windows > Preferences > Maven`에서 3가지 옵션 체크 후 이클립스 재시작한다.         

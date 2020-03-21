@@ -5,7 +5,7 @@ categories:
 last_modified_at: 2020-02-11T22s:00:00+09:00
 classes: wide
 toc: true
-comments: false
+comments: true
 ---
 
 에버노트, 네이버 블로그만 쓰다가 github.io를 알게 되었고 재밌을거 같아

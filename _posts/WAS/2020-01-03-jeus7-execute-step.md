@@ -5,7 +5,7 @@ categories:
 last_modified_at: 2020-01-03T22s:00:00+09:00
 classes: wide
 toc: true
-comments: false
+comments: true
 ---
 ### Intro
 해당 내용은 아래 환경을 기준으로 작성하였음.    

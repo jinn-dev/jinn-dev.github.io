@@ -5,7 +5,7 @@ categories:
 last_modified_at: 2020-02-05T22s:00:00+09:00
 classes: wide
 toc: true
-comments: false
+comments: true
 ---
 내가 보기 위한 마크다운 문법 정리
 

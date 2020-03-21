@@ -5,7 +5,7 @@ categories:
 last_modified_at: 2020-02-12T22s:00:00+09:00
 classes: wide
 toc: true
-comments: false
+comments: true
 ---
 여러 명이서 Oracle -> MySQL DB 컨버전 작업을 진행하면서 겪었던 일이었다. 단건 `update`를 실행하려 해도 계속 lock이 걸리거나 무한 대기중인 상황이 수시로 발생했다. 나는 솔루션 모듈 변환 작업 진행중이라 처음엔 상관 없었지만 실제로 디비에 붙어서 테스트 했을때 해당 문제 때문에 어려움을 겪었다. 작업자 모두가 여태까지 Oracle DB를 사용했기 때문에 이런 문제가 왜 생기는지조차 원인을 찾는 것도 힘들었다.
 

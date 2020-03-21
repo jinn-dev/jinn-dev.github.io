@@ -5,7 +5,7 @@ categories:
 last_modified_at: 2020-02-17T22s:00:00+09:00
 classes: wide
 toc: true
-comments: false
+comments: true
 ---
 ※ 간단한 예제 소스
 ```javascript

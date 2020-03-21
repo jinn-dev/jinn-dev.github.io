@@ -5,7 +5,7 @@ categories:
 last_modified_at: 2020-01-05T22s:00:00+09:00
 classes: wide
 toc: true
-comments: false
+comments: true
 ---
 해당 내용은 MySQL 5.7, RedHat6.7 버전 기준으로 작성하였음.
 

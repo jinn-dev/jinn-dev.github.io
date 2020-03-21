@@ -5,7 +5,7 @@ categories:
 last_modified_at: 2020-02-01T22s:00:00+09:00
 classes: wide
 toc: true
-comments: false
+comments: true
 ---
 줄여서 GC라 불리우는 Garbage Collection은 그저 나 대신 사용하지 않는 메모리를 정리해주고 재할당해주는 개념이라고만 알고 있었지, 깊게 생각해보진 않았다. 하지만 C++ 기반의 엔진 모듈을 디버깅해야 하는 상황이 생기면서 주로 Java를 접했던 나에게 수동 메모리 할당 개념은 생소하게 다가왔다. 이때 GC의 소중함을 느꼈고.. 성능 테스트를 하거나 서버 세팅 시 알맞은 GC 방식을 알아두면 좋다고 하여 정리해본다.
 

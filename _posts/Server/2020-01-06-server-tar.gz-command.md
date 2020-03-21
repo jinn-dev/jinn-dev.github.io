@@ -5,7 +5,7 @@ categories:
 last_modified_at: 2020-01-06T22s:00:00+09:00
 classes: wide
 toc: true
-comments: false
+comments: true
 ---
 tar.gz 배포할때 많이 쓰는데 OS마다 차이가 있다보니 자꾸 까먹어서 메모..    
 tar로 여러 파일을 한번에 묶은 다음 , gzip 명령어로 압축

@@ -5,7 +5,7 @@ categories:
 last_modified_at: 2020-01-06T22s:00:00+09:00
 classes: wide
 toc: true
-comments: false
+comments: true
 ---
 AIX JAVA JDK는 RISC 형태라 JAVA 공식홈에서 설치본 제공 안하므로 IBM에서 지원하는 SDK 설치해야 함
 

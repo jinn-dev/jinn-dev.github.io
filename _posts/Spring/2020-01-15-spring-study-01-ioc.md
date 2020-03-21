@@ -5,7 +5,7 @@ categories:
 last_modified_at: 2020-01-15T22s:00:00+09:00
 classes: wide
 toc: true
-comments: false
+comments: true
 ---
 ## Spring IoC 컨테이너
 IoC 기능을 제공하는 컨테이너로 Bean 들을 담고 있다.

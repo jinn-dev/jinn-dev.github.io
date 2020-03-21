@@ -5,7 +5,7 @@ categories:
 last_modified_at: 2020-03-17T22s:00:00+09:00
 classes: wide
 toc: true
-comments: false
+comments: true
 ---
 ## Java Collection
 

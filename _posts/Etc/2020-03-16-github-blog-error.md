@@ -5,7 +5,7 @@ categories:
 last_modified_at: 2020-03-16T22s:00:00+09:00
 classes: wide
 toc: true
-comments: false
+comments: true
 ---
 github blog 저장소를 private으로 돌렸는데 404 에러가 발생했다. 다시 public으로 변경해도 접속이 안됨ㅠㅠ
 

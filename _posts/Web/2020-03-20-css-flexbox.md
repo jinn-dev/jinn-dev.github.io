@@ -5,7 +5,7 @@ categories:
 last_modified_at: 2020-03-20T22s:00:00+09:00
 classes: wide
 toc: true
-comments: false
+comments: true
 ---
 ### FlexBox
 flexbox(flexible box module)는 flexbox 인터페이스 내의 아이템 간 공간 배분과 정렬 기능을 제공하는 1차원 레이아웃 모델로 설계되었다.
