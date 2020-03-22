@@ -3,7 +3,7 @@ title: "CSS FlexBox"
 categories:
   - CSS
 last_modified_at: 2020-03-20T22s:00:00+09:00
-classes: wide
+toc_sticky: true
 toc: true
 comments: true
 ---

@@ -3,7 +3,7 @@ title: "아톰 단축키 및 패키지 설치 이력 정리"
 categories:
   - Tool
 last_modified_at: 2020-03-15T22s:00:00+09:00
-classes: wide
+toc_sticky: true
 toc: true
 comments: true
 ---

@@ -3,7 +3,7 @@ title: "minimal mistakes 테마로 github.io 블로그 생성하기"
 categories:
   - Github
 last_modified_at: 2020-02-11T22s:00:00+09:00
-classes: wide
+toc_sticky: true
 toc: true
 comments: true
 ---
@@ -106,7 +106,7 @@ title: "minimal mistakes 테마로 github.io 블로그 생성하기"
 categories:
   - Github
 last_modified_at: 2020-02-12T22s:00:00+09:00
-classes: wide
+toc_sticky: true
 toc: true
 ---
 내용입력하긔

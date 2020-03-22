@@ -3,7 +3,7 @@ title: "Github 블로그 404 에러"
 categories:
   - Github
 last_modified_at: 2020-03-16T22s:00:00+09:00
-classes: wide
+toc_sticky: true
 toc: true
 comments: true
 ---

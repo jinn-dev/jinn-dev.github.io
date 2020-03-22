@@ -3,7 +3,7 @@ title: OS별 tar.gz 압축 및 압축 해제 명령어 (+zip)
 categories:
   - Unix
 last_modified_at: 2020-01-06T22s:00:00+09:00
-classes: wide
+toc_sticky: true
 toc: true
 comments: true
 ---

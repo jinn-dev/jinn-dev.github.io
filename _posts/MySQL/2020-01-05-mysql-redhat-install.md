@@ -3,7 +3,7 @@ title: "RedHat에 MySQL 설치하는 방법"
 categories:
   - MySQL
 last_modified_at: 2020-01-05T22s:00:00+09:00
-classes: wide
+toc_sticky: true
 toc: true
 comments: true
 ---

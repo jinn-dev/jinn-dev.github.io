@@ -3,7 +3,7 @@ title: "마크다운(markdown) 사용법"
 categories:
   - Spring
 last_modified_at: 2020-02-05T22s:00:00+09:00
-classes: wide
+toc_sticky: true
 toc: true
 comments: true
 ---
