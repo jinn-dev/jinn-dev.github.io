@@ -54,5 +54,5 @@ int mysql_real_query(MYSQL *mysql, const char *stmt_str, unsigned long length)
 - `mysql_query()`는 바이너리 데이터를 사용할 수 없으므로 대신, `mysql_real_query()`를 사용해야 한다.
 
 
-### reference
+### Reference
 [https://dev.mysql.com/doc/refman/5.7/en/](https://dev.mysql.com/doc/refman/5.7/en/)

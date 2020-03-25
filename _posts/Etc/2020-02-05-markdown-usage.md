@@ -241,5 +241,5 @@ url이 아니라 제목으로 보이게 하려면
 `블럭강조`
 
 
-## references
+## Reference
 <https://github.com/mmistakes/minimal-mistakes>

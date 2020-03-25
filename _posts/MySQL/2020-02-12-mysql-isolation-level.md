@@ -91,6 +91,6 @@ snapshot 구축 시점으로 인해 해당 데이터에 관해서 암묵적으�
 연이어 각 트랜잭션에서 `update`를 실행을 하면 해당 `row`에 Exclusive lcok이 걸려고 시도할 것이다. 하지만 이미 해당 `row`는 Shared lock이 걸려있으므로 두 트랜잭션 모두 deadlock 오류가 발생하거나 timeout으로 `update`쿼리가 실행이 안될 것이다.
 
 `SERIALIZABLE`은 한 트랜잭션에서 `select`쿼리를 실행하면 그 트랜잭션이 `commit`되기 전까지는 다른 트랜잭션에서는 DML 작업(`insert`, `update`, `delete`)이 불가능하므로 <b>트랜잭션 비일관성 특징 3가지 모두 해당이 안된다.</b>
-### reference
+### Reference
 [https://jupiny.com/2018/11/30/mysql-transaction-isolation-levels/](https://jupiny.com/2018/11/30/mysql-transaction-isolation-levels/)
 [https://gywn.net/2012/05/mysql-transaction-isolation-level/](https://gywn.net/2012/05/mysql-transaction-isolation-level/)

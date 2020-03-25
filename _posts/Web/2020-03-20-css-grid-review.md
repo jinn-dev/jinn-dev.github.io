@@ -343,6 +343,6 @@ line naming을 줘서 설정해줄 수도 있다. 자주 사용되는 건 아님
 - How can I align the content INSIDE of the grid cells?
 - How can I align the grid cells?
 - How can I give space between the cells
+
 ### Reference
 [https://developer.mozilla.org/en-US/docs/Web/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[https://cssgridgarden.com/#ko](https://cssgridgarden.com/#ko)

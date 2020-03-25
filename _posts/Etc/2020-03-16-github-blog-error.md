@@ -17,5 +17,5 @@ $ git push
 ```
 
 
-### reference
+### Reference
 [https://riptutorial.com/git/example/4170/creating-an-empty-commit](https://riptutorial.com/git/example/4170/creating-an-empty-commit)

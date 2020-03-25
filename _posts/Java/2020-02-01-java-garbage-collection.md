@@ -77,6 +77,6 @@ Young 영역에 대한 GC는 Parallel GC와 동일하지만 Old 영역의 GC는 
 GC는 참조하지 않는 접근 불가능한 상태의 객체를 제거 대상으로 간주하기 때문에, 사용은 하지 않지만 계속해서 참조를 하는 경우의 객체가 있으면 메모리 누수가 발생할 수 있다. 예를 들어 JDBC 드라이버의 데이터 커넥션 풀을 사용하는 경우가 있다. close() 메소드를 호출하면서 관련된 Statement와 ResultSet 객체를 닫고 GC를 수행한다. 만약 close() 메소드를 호출하지 않으면 Statement, ResultSet은 GC되지 않고 커넥션 풀 안의 데이터베이스 연결에 붙어서 계속 남아 메모리 누수가 발생할 것이다.  
 
 
-### reference
+### Reference
 [https://12bme.tistory.com/382](https://12bme.tistory.com/382)     
 [https://d2.naver.com/helloworld/1329](https://d2.naver.com/helloworld/1329)
