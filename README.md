@@ -1,1 +1,1 @@
-개인 블로그 <https://jinn-dev.github.io>
+<https://jinn-dev.github.io>
