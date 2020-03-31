@@ -12,6 +12,7 @@ CSS 그리드 레이아웃(Grid Layout)은 FlexBox와 다르게 2차원적으로
 
 테이블과 마찬가지로 그리드 레이아웃은 세로 열과 가로 행을 기준으로 요소를 정렬할 수 있다. 하지만, 테이블과 달리 CSS 그리드는 다양한 레이아웃을 훨씬 더 쉽게 구현 가능하다.
 
+더 자세한 Grid 정보는 [https://heropy.blog/2019/08/17/css-grid/](https://heropy.blog/2019/08/17/css-grid/) 참고
 ***
 ### Auto Rows and Columns
 `auto-flow`라는 속성은 flexbox의 `flex-direction`과 비슷한데 정의되지 않는 element가 추가적으로 오면 수직으로 정렬할건지 수평으로 정렬할건지 `column` or `row`로 정할 수 있다.
