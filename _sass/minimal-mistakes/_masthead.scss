@@ -3,13 +3,18 @@
    ========================================================================== */
 
 .masthead {
-  position: relative;
+  // position: relative;
+  position: fixed;
+  top: 0;
   border-bottom: 1px solid $border-color;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
   z-index: 20;
+  width:  100%;
+  background: white;  // set a color to hide content that may appear below masthead
+  height: 85px; // need a magic number here which may break in different viewports
 
   &__inner-wrap {
     @include clearfix;
