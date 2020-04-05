@@ -7,12 +7,15 @@ toc_sticky: true
 toc: true
 comments: true
 ---
-### FlexBox
-flexbox(flexible box module)는 flexbox 인터페이스 내의 아이템 간 공간 배분과 정렬 기능을 제공하는 1차원 레이아웃 모델로 설계되었다.
+## Life Before Flexbox
+div의 기본값은 `block`이며 옆에 어떤 element도 올 수 없다.   
+![주석 2020-04-02 235557](/assets/images//주석%202020-04-02%20235557.png)
 
-box 3개를 나란히 하려면? `inline-block` 사용
-- box 사이의 margin이 자동으로 생김
-- 화면 사이즈 조정할 때 box가 움직인다.
+
+`inline-block`은 box를 element 요소로 바꿔주지만 block 속성을 갖고 있어서 너비와 높이를 갖고 있다.   
+ ![주석 2020-04-02 2355571](/assets/images//주석%202020-04-02%202355571.png)
+
+하지만 div 간격을 조정하려면 box element 각각 margin을 설정해줘야 하는 노가다가 필요한데.. 이것도 스크린마다 간격이 깨지는 단점이 있다.      
 
 ```html
 <!DOCTYPE html>
@@ -46,12 +49,47 @@ box 3개를 나란히 하려면? `inline-block` 사용
 </html>
 ```
 
-box 사이의 간격을 일정하게 떨어뜨려 높고 싶다면?
-
-box의 margin을 하나씩 조정해주는 노가다가 필요한데 flexbox로 이런 작업을 쉽게 할 수 있다.
+![주석 2020-04-03 001452](/assets/images//주석%202020-04-03%20001452.png)
 
 
-### Flex Wrap and Direction
+이걸 해결해주는게 바로 FlexBox다!
+
+## FlexBox
+flexbox(flexible box module)는 flexbox 인터페이스 내의 아이템 간 공간 배분과 정렬 기능을 제공하는 1차원 레이아웃 모델로 설계되었다.
+
+부모 element에 `display: flex`를 설정해주면 자식의 위치를 움직일 수 있다. 자식 div에다가 일일히 margin을 설정할 필요가 없어진다!
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .wrapper {
+      display: flex;
+    }
+
+    .box {
+      width: 150px;
+      height: 150px;
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+</body>
+</html>
+```
+![주석 2020-04-03 002429](/assets/images//주석%202020-04-03%20002429.png)
+
+## Main Axis and Cross Axis
 flex container는 width와 height에 의해 아이템을 정렬한다.
 ![주석 2020-03-21 233558](/assets/images//주석%202020-03-21%20233558.png)
 
@@ -60,7 +98,7 @@ flexbox는 두 개의 축이 있다. `flex-direction`이 축에 영향을 준다
 
 따라서, main axis에 있는 아이템을 움직이려면 `justify-content`를 cross axis에 있는 아이템을 움직이려면 `align-items`를 적용하면 된다.
 
-`flex-direction`이 `column`이면 축은 반대가 된다.
+`flex-direction`이 `column`이면 축은 반대가 된다. (매우 중요하다!!!)
 
 | flex-direction | justify-content | align-items |
 |:--------|:--------|:-------:|
@@ -93,7 +131,8 @@ flexbox는 두 개의 축이 있다. `flex-direction`이 축에 영향을 준다
 ```
 ![Basics2](/assets/images//Basics2.png)
 
-### Align Self
+
+## Align Self
 flex container가 아닌 flex item에만 영향을 주는 몇 안되는 옵션 중 하나
 ```css
 .box3 {
@@ -103,7 +142,7 @@ flex container가 아닌 flex item에만 영향을 주는 몇 안되는 옵션 �
 
 ![주석 2020-03-22 004259](/assets/images//주석%202020-03-22%20004259.png)
 
-### Quiz
+## Quiz
 - What is the default direction of a flex container?
 - By default, the main axis is ?
 - How do I move items on the main axis?
@@ -111,7 +150,7 @@ flex container가 아닌 flex item에만 영향을 주는 몇 안되는 옵션 �
 - How can I align an element individually?
 - How can I make the flex-items go to another line instead of shrinking
 
-### Reference
+## Reference
 [https://codeburst.io/understanding-basic-concepts-of-css-flexbox-ffa657dc39c1](https://codeburst.io/understanding-basic-concepts-of-css-flexbox-ffa657dc39c1)
 
 [https://developer.mozilla.org/ko/docs/Web/CSS](https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Flexible_Box_Layout/Flexbox%EC%9D%98_%EA%B8%B0%EB%B3%B8_%EA%B0%9C%EB%85%90)
