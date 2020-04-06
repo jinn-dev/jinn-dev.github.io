@@ -52,7 +52,8 @@ public BoardServiceImpl {
 }
 ```
 
-이럴 경우는 `required()`를 `false`로 변경해줘야 한다.         
+이럴 경우는 `required()`를 `false`로 변경해줘야 한다.        
+ 
 ```java
 @Service
 public BoardServiceImpl {
@@ -79,6 +80,7 @@ public BoardServiceImpl {
 
 2. **@Primary**    
 중복되는 빈 중에 하나를 골라서 `@Primary` 어노테이션을 선언하여 우선순위를 둘 수 있다.       
+
 ```java
 @Repository
 @Primary
@@ -89,6 +91,7 @@ public BoardDAO {
 
 3. **모든 빈 주입 받기**    
 List로 받으면 컨테이너가 발견한 모든 빈이 List에 들어가게 된다.    
+
 ```java
 @Service
 public BoardServiceImpl {
