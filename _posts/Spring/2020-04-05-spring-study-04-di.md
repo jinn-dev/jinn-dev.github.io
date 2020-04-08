@@ -53,7 +53,7 @@ public BoardServiceImpl {
 ```
 
 이럴 경우는 `required()`를 `false`로 변경해줘야 한다.        
- 
+
 ```java
 @Service
 public BoardServiceImpl {
@@ -79,8 +79,7 @@ public BoardServiceImpl {
 ```
 
 2. **@Primary**    
-중복되는 빈 중에 하나를 골라서 `@Primary` 어노테이션을 선언하여 우선순위를 둘 수 있다.       
-
+중복되는 빈 중에 하나를 골라서 `@Primary` 어노테이션을 선언하여 우선순위를 둘 수 있다.        
 ```java
 @Repository
 @Primary
@@ -90,19 +89,18 @@ public BoardDAO {
 ```
 
 3. **모든 빈 주입 받기**    
-List로 받으면 컨테이너가 발견한 모든 빈이 List에 들어가게 된다.    
+  List로 받으면 컨테이너가 발견한 모든 빈이 List에 들어가게 된다.    
+  ```java
+  @Service
+  public BoardServiceImpl {
+    @Autowired
+    private List<BoardDAO> boardDAO;
 
-```java
-@Service
-public BoardServiceImpl {
-  @Autowired
-  private List<BoardDAO> boardDAO;
-
-  public void printBoardDao() {
-    this.boardDao.forEach(System.out::println);
+    public void printBoardDao() {
+      this.boardDao.forEach(System.out::println);
+    }
   }
-}
-```
+  ```
 
 ## Resource
 `@Resource`는 **자바에서 지원** 하는 어노테이션으로 **객체의 이름** 을 먼저 확인해서 어떤 클래스를 의존 주입할 것인지 결정한다. 필드, 생성자, 입력 파라미터가 한 개인 메소드에 적용 가능하다.    

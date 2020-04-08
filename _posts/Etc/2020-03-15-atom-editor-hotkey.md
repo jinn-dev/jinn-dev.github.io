@@ -56,6 +56,7 @@ CSS 스타일 색상 선택할 때 색상 팔레트에서 직접 선택할 수 �
 
 ### [Emmet](https://atom.io/packages/emmet)
 특정 Syntax로 반복적인 코드를 쉽게 작성할 수 있다.
+
 ```html
 div>ul>li
 ```
@@ -68,6 +69,18 @@ div>ul>li
 </div>
 ```
 Reference: [Emmet Syntax Doc](https://docs.emmet.io/abbreviations/syntax/)
+
+jsp, php에서도 쓰려면 옵션 추가 필요함!
+1. setting > keybindings에서 your keymap file
+
+2. keymap.cson에 내용 추가
+
+```cson
+# emmet tab jsp
+'atom-text-editor[data-grammar~="jsp"]:not([mini])': 'tab': 'emmet:expand-abbreviation-with-tab'
+# emmet tab php
+'atom-text-editor[data-grammar~="php"]:not([mini])': 'tab': 'emmet:expand-abbreviation-with-tab'
+```
 
 ### [Linter](https://atom.io/packages/linter)
 HTML, CSS, JavaScript 등의 코드를 분석해서 문법과 유효성 검증해준다.
