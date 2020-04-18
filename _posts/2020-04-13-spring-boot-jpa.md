@@ -1,21 +1,29 @@
 ---
-title: "Spring Boot With JPA - 프로젝트 환경설정(진행중)"
+title: "Spring Boot With JPA - 프로젝트 환경설정"
 categories:
   - Spring
 last_modified_at: 2020-04-13T16s:42:00+09:00
 toc_sticky: true
 toc: true
 comments: true
+published : false
 ---
 
 ## 프로젝트 생성
 
 Spring Boot 프로젝트는 [http://start.spring.io/](http://start.spring.io/)에서 쉽게 생성 가능하다.
 
-- jsp vs Thymeleaf                   		 
+- jsp vs Thymeleaf                       		 
   요즘 jsp는 성능상문제로 최신 Spring boot에서 권장하지 않는다. 그래서 Thymeleaf를 써보기로 한다. 
+  
 - Maven vs Gradle    
   차이점은 일단 패스하고.. Gradle을 써보기로
+  
+  
+  
+  ![주석 2020-04-13 210348](C:/Users/jekwak/Documents/주석 2020-04-13 210348.png)
+
+​          
 
 ### Lombok 사용하기
 
@@ -35,6 +43,8 @@ public class boardDTO {
 }
 ```
 
+​         
+
 ### 라이브러리 살펴보기
 
 gradle의 라이브러리의 의존관계를 확인하려면 터미널에서 아래 명령어로 볼 수 있다.
@@ -48,7 +58,7 @@ $ gradlew dependencies
   - 스프링 MVC
   - 스프링 ORM
   - JPA, Hibernate
-- 스프링 데이터 JPA
+  - 스프링 데이터 JPA
   
 - **기타 라이브러리**
   - H2 데이터베이스 클라이언트
@@ -57,6 +67,7 @@ $ gradlew dependencies
   - 로깅 (slf4j라는 로그 인터페이스 모음과 logback 로그 구현체)
   - 테스트 (junit, spring-test, mockito, assertj 등)
   
+  ​    
   
 
 Spring boot는 라이브러리에 대한 Dependency를 관리해주기 때문에 몇 개만 등록해도 하위 Dependency를 자동으로 땡겨와 준다.
@@ -112,9 +123,11 @@ Spring boot는 라이브러리에 대한 Dependency를 관리해주기 때문에
 
 -  thymeleaf viewName 매핑 방식      
   `resources:templates/`+[ViewName]+`.html`
+  
+    
+  
 
-
-**java/HelloController.java**
+**1. java/HelloController.java**
 
 ```java
 @Controller
@@ -130,7 +143,7 @@ public class HelloController {
 
 
 
-**resources/templates/hello.html** (템플릿 페이지)
+**2. resources/templates/hello.html** (템플릿 페이지)
 
 ```html
 <!DOCTYPE html>
@@ -155,7 +168,7 @@ public class HelloController {
 
 
 
-**resources/static/index.html** (정적인 컨텐츠)
+**3. resources/static/index.html** (정적인 컨텐츠)
 
 ```html
 <!DOCTYPE html>
@@ -171,7 +184,7 @@ public class HelloController {
 </html>
 ```
 
-
+​     
 
 ### spring-boot-devtools
 
@@ -179,7 +192,7 @@ public class HelloController {
 
 
 
-**bundle.gradle**
+**1. bundle.gradle**
 
 ```json
 implementation 'org.springframework.boot:spring-boot-devtools'
@@ -195,7 +208,7 @@ reloading, cache 삭제 등 개발 시 유용한 기능이 많은 라이브러�
 
 
 
-**application.properties 또는 application.yml**
+**2. application.properties 또는 application.yml**
 
 아래 내용도 추가해주자.
 
@@ -211,7 +224,7 @@ spring.thymeleaf.cache: false
 
 설정이 잘 되었다면 소스 수정 후 새로고침하면 변경 사항이 반영됨을 확인 할 수 있다.
 
-
+​      
 
 ## H2 데이터베이스 설치
 
@@ -229,29 +242,56 @@ zip 파일 압축해제 하고 해당 경로에서 `h2.bat` 파일 실행 (Windo
 D:\dev\h2\bin> h2.bat
 ```
 
-![주석 2020-04-13 144948](/assets/images/주석 2020-04-13 144948.png)
+![주석 2020-04-13 144948](/assets/images/주석 2020-04-13 144948.png)    
 
 - http://localhost:8082/ 접속
-- `jdbc:h2:~/프로젝트명` (세션 유지한 상태로 진행해야 함)
-- `~/프로젝트명.mv.db` 파일 생성
-- 이후 부터는 JDBC URL: `jdbc:h2:tcp://localhost/~/프로젝트명` 네트워크 모드로 접속
+- `jdbc:h2:~/프로젝트명` (세션 아이디 유지한 상태로 진행해야 함)
+- `~/프로젝트명.mv.db` 파일 생성이 됨
+- 이후 부터는 JDBC URL: `jdbc:h2:tcp://localhost/~/프로젝트명` 네트워크 모드로 접속하면 된다.
 
-
+​     
 
 ## JPA와 DB 설정, 동작 확인 
 
-**application.yml**
+**1. application.yml**
 
 ```yml
 spring:
   datasource:
-    url: jdbc:h2:tcp://localhost/~/jpashop;MVCC=TRUE
+    url: jdbc:h2:tcp://localhost/~/jpashop
     username: sa 
     password: 
     driver-class-name: org.h2.Driver
+    
+  jpa: 
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+      #show_sql: true
+      format_sql: true
+      
+logging: 
+  level: 
+    org.hibernate.SQL: debug
+    org.hibernate.type: trace
 ```
 
+- `show_sql`: `System.out`에 하이버네이트 실행 SQL을 남긴다.       
 
+- `org.hibernate.SQL`: logger를 통해 하이버네이트 실행 SQL을 남긴다. (추천)    
+
+- `org.hibernate.type`: 쿼리 파라미터에 뭐가 들어가는지 확인할 수 있다.    
+
+
+
+logging 옵션을 위와 같이 주면 쿼리 및 바인딩 파라미터 값을 각각 확인할 수 있다.
+
+  ```verilog
+DEBUG 12560 --- [           main] org.hibernate.SQL                        : insert into member (username, id) values (?, ?)
+TRACE 12560 --- [           main] o.h.type.descriptor.sql.BasicBinder : binding parameter [1] as [VARCHAR] - [memberA]
+TRACE 12560 --- [           main] o.h.type.descriptor.sql.BasicBinder : binding parameter [2] as [BIGINT] - [1]
+  ```
 
 
 

@@ -218,4 +218,7 @@ AOP를 위해 XML 설정을 많이 해줬던 것과 달리 선언적 트랜잭�
 그래서 Unchecked Exception(Runtime Exception) 발생 시 Transaction은 Rollback을 발생시킨다.
 만약 사용자 예외 처리 전에 Runtime Exception이 발생한다면 롤백이 되버려서 겉보기엔 왜 사용자 예외처리를 안타고 롤백이 되버리지? 라는 의문이 생길 수도 있다. 이럴 땐 `rollbackOn, dontRollbackOn` 속성으로 특정 Exception 발생 시 rollback 유무를 제어할 수 있다.
 관련 정보는 [Spring Boot의 Transactional](https://dev.overnodes.com/entry/Spring-Boot-Transactional-%EC%9D%B4%EB%9E%80-Transactional%EC%97%90-%EB%8C%80%ED%95%98%EC%97%AC)에 더 자세히 나와있다.
+
+(+) 추가로 테스트 소스에 `@Transactional`을 선언하면 자동으로 롤백되므로 테스트할 때 데이터 추가되는 것까지 확인하고 싶으면 `@Rollback(false)`을 추가해야 한다.
+
 스프링은 역시 쉬운 프레임워크가 아니다 😂
