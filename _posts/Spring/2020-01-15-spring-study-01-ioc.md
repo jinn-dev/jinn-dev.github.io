@@ -44,7 +44,7 @@ public class CarRepository {
 
 <br/>
 
-**CarService.java ** 
+**CarService.java**  
 
 ```java
 package Car;
@@ -61,7 +61,7 @@ public class CarService {
 
 <br/>
 
-**application.xml ** 
+**application.xml** 
 
 <b>bean 설정 파일(Spring Bean Configuration File)</b>을 생성 후, `CarService`와 `CarRepository`를 Bean 으로 등록한다.     
 `<bean>` 을 등록 후, 주입이 필요한 부분은 `<property>` 를 추가해준다. name은 class에서 선언된 객체 이름이고, ref는 해당 bean의 이름이다.
@@ -214,7 +214,7 @@ public class ApplicationConfig {
 ```
 <br/>
 
-**CarService.java **   
+**CarService.java**
 
 `CarService`가 `carRepository`를 의존성 주입을 받기 위해 생성자에 `@Autowired` 선언하여 의존성 주입 가능하다.     
 
@@ -234,7 +234,7 @@ public class CarService {
 ```
 <br/>
 
-**ApplicationConfig.java **   
+**ApplicationConfig.java** 
 
 setter를 선언한 경우,  메소드 이름으로 받아  설정 파일에서 <u>직접 의존성 주입</u>을 해줄 수 있다.
 
@@ -256,7 +256,7 @@ setter를 선언한 경우,  메소드 이름으로 받아  설정 파일에서 
 ```
 <br/>
 
-**CarMain.java **    
+**CarMain.java**
 
 `AnnotationConfigApplicationContext`를 사용하여 `ApplicationConfig.class`를 선언한다.
 
@@ -286,6 +286,7 @@ public class CarMain {
 }
 ```
 <br/><br/>
+
 ### 2. Component Scan
 `@ComponentScan`에서 basePackageClasses에 클래스를 입력하여 어디부터 스캔할지 알려주고 아래 어노테이션을 찾아 Bean을 등록한다.
 
@@ -297,7 +298,7 @@ public class CarMain {
 
 
 
-**ApplicationConfig.java ** 
+**ApplicationConfig.java** 
 
 `@ComponentScan`을 선언하고 CarMain.class부터 스캔하도록 지정해준다.
 
@@ -313,7 +314,7 @@ public class ApplicationConfig {
 ```
 <br/>
 
-**CarRepository.java ** 
+**CarRepository.java**  
 
 - `CarRepository`에 `@Repository` 선언
 
