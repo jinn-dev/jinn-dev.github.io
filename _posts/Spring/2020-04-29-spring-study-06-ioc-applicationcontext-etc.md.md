@@ -1,3 +1,13 @@
+---
+title: "Spring 국제화 서비스를 위한 메세지소스(MessageSource) 적용"
+categories:
+  - Spring
+last_modified_at: 2020-04-28T14s:00:00+09:00
+toc: true
+toc_sticky: true
+comments: true
+---
+
 ## MessageSource
 
 ApplicationContext의 기능 중 하나인 MessageSource는 **다국어를 지원해주는 인터페이스**이다.
