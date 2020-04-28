@@ -1,5 +1,5 @@
 ---
-title: "Spring의 @Component, Component Scan"
+title: "Spring의 컴포넌트 스캔(@Component)"
 categories:
   - Spring
 last_modified_at: 2020-04-27T01s:50:00+09:00

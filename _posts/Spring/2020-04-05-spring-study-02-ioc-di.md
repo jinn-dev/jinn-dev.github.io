@@ -1,5 +1,5 @@
 ---
-title: "Spring에서 Dependency Injection을 하는 방법"
+title: "Spring Dependency Injection(@Autowired)"
 categories:
   - Spring
 last_modified_at: 2020-04-27T22s:00:00+09:00
