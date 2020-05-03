@@ -137,7 +137,7 @@ public void run(ApplicationArguments args) throws Exception {
     
     //임의 Validation error를 발생하기 위해 값 설정
     event.setLimit(-1);
-	event.setEmail("abc");
+    event.setEmail("abc");
     
     //EventValidator eventValidator = new EventValidator();
     Errors errors = new BeanPropertyBindingResult(event, "event");
@@ -148,7 +148,7 @@ public void run(ApplicationArguments args) throws Exception {
     System.out.println(errors.hasErrors());
 
     for(ObjectError e : errors.getAllErrors()) {
-		System.out.println("====error code====");
+        System.out.println("====error code====");
         for(String errMsg : e.getCodes()) {
             System.out.println(errMsg);
         }
