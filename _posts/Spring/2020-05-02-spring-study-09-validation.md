@@ -15,7 +15,7 @@ Bean Validation이 제공하는 여러 Validation Annotation을 사용해서 객
 
 <br/> 
 
-### 인터페이스
+### EventValidator 인터페이스
 
 - supports(Class clazz)    
   어떤 타입의 객체를 검증할 때 해당 Validation을 사용할 것인지 결정한다.
@@ -115,6 +115,8 @@ public class AppRunner implements ApplicationRunner {
 <br/>
 
 <br/>
+
+### Validator 인터페이스
 
 <u>스프링 부트 2.0.5 버전</u> 이상 부터는 `LocalValidatorFactoryBean` 빈으로 자동 등록되어 있으므로 `EventValidator` 대신 `Validator`를 의존성 주입 받아서 사용할 수 있다.        
 
