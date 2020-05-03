@@ -84,13 +84,8 @@ class path resource [test.txt]
 위 코드에서 `classpath:` 접두어를 안쓰고 파일명만 주고 실행을 해보면
 
 ```text
-2020-05-01 14:44:40.238  INFO 17320 --- [           main] com.example.demo4.Demo4Application       : Starting Demo4Application on DESKTOP-JOQCK4O with PID 17320 (D:\dev\workspace-spring-tool-suite-4-4.6.0.RELEASE\demo4\target\classes started by jekwak in D:\dev\workspace-spring-tool-suite-4-4.6.0.RELEASE\demo4)
-2020-05-01 14:44:40.242  INFO 17320 --- [           main] com.example.demo4.Demo4Application       : No active profile set, falling back to default profiles: default
-2020-05-01 14:44:41.205  INFO 17320 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-05-01 14:44:41.214  INFO 17320 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-05-01 14:44:41.215  INFO 17320 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
-2020-05-01 14:44:41.319  INFO 17320 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-05-01 14:44:41.319  INFO 17320 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1026 ms
+...
+WebApplicationContext: initialization completed in 1026 ms
 2020-05-01 14:44:41.501  INFO 17320 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
 2020-05-01 14:44:41.663  INFO 17320 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2020-05-01 14:44:41.666  INFO 17320 --- [           main] com.example.demo4.Demo4Application       : Started Demo4Application in 1.792 seconds (JVM running for 2.271)
