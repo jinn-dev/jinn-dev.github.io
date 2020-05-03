@@ -61,7 +61,12 @@ public class EventValidator implements Validator {
 
 	@Override
 	public boolean supports(Class<?> clazz) {
-		return Event.class.equals(clazz);
+		boolean result = false;
+		if(Event.class.isAssignableFrom(clazz)) {
+			result = true;
+		}
+		return result;
+		//return Event.class.equals(clazz);
 	}
 
 	@Override
