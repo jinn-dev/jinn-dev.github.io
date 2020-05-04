@@ -32,7 +32,9 @@ public class AppRunner implements ApplicationRunner {
 
 ## Resource의 추상화
 
-스프링 내부에서 가장 많이 사용하는 인터페이스로 java.net.URL을 추상화 한 것이다. (org.springframework.core.io.Resource)    
+스프링 내부에서 가장 많이 사용하는 인터페이스로 <u>java.net.URL</u>을 추상화 한 것이다. (org.springframework.core.io.Resource)
+
+(java.net.URL이 classpath 기준으로 가져오는 기능이 없었음)
 
 <br/>
 
