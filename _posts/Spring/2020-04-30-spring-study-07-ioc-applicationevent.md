@@ -239,7 +239,7 @@ public class MyEventHandler {
 
 ### 스프링 기본 이벤트
 
-- ContextRefreshedEvent     
+- **ContextRefreshedEvent**     
   ApplicationContext가 초기화 및 리프레시 할 때 발생한다.
 
   ```java
@@ -251,7 +251,15 @@ public class MyEventHandler {
   	
   ```
 
-- ContextClosedEvent    
+- **ContextStartedEvent**        
+  
+ApplicationContext가 start되어 라이프사이클 빈들이 시작신호를 받는 시점에 발생
+  
+- **ContextStoppedEvent**    
+
+  ApplicationContext가 stop되어 라이프사이클 빈들이 정지신호를 받는 시점에 발생
+
+- **ContextClosedEvent**    
   ApplicationContext가 close되고 빈 소멸되는 시점에 발생한다.
 
   ```java
@@ -262,7 +270,7 @@ public class MyEventHandler {
   	}
   ```
 
-- RequestHandledEvent    
+- **RequestHandledEvent**    
   HTTP 요청을 처리했을 때 발생한다.
   
   
