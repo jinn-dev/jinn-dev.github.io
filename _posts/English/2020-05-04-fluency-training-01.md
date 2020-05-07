@@ -18,7 +18,9 @@
 
 `Brad` 말씀을 들으니 '쓰레기 최소화' 운동에 동참하고 계시는 것 같네요.
 
+<br>
 
+<br>
 
 ### 5월 5일
 
@@ -36,9 +38,12 @@
 
 <br>
 
+<br>
+
 ### 5월 6일
 
-오늘부터는 영어 스크립트도 같이 보내기로 했음
+(+) 오늘부터는 영어 스크립트도 같이 보내기로 했음
+
 
 
 `Brad` (장을 다 보고나서) 오늘 도와주셔서 감사합니다.
@@ -55,6 +60,8 @@
 
 `Inge` 그러시죠. 저도 무거운 물건들을 배달시켜야겠네요.
 
+<br>
+
 > `Brad` Thank you for your help today.
 >
 > `Brad` The vegetables and fruits were fresh and very cheap.
@@ -69,7 +76,7 @@
 >
 > `Inge` Sure. I'll get some heavy stuff to be delivered from there, too.
 
-<br>
+<br><br>
 
 ### 5월 7일
 
@@ -89,7 +96,7 @@
 
 `Min` 수리하려면 돈을 더 모아야 해서, 수리하려면 아직 멀었어.
 
-
+<br>
 
 > `Eddy`  Did you get your car repaired?
 >
@@ -106,5 +113,7 @@
 > `Eddy`  Wow! That's more than my expectation, too.
 >
 > `Min` Since I need to earn more money for the repair, I still have a long way to go to repair.
+
+<br>
 
 <br>
