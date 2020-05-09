@@ -117,3 +117,48 @@
 <br>
 
 <br>
+
+### 5월 8일                
+
+`Cindy` 너 어제 소개팅 어땠어?
+
+`Jake` 좋았는데, 오늘 너무 피곤해.
+
+`Cindy` 그래서 뭐 했는데?
+
+`Jake` 뭐, 여러 가지. 이것저것.
+
+`Cindy` 어서, 자세히 말해줄래?
+
+`Jake` 사실, 대단한 일은 없었어.
+
+`Jake` 다만 퇴근하고 나서 피곤해서 그래.
+
+`Cindy` 맞아. 그래서 나도 보통 평일엔 휴식을 취하고 주말에 약속을 잡아.
+
+`Jake`  그렇지만 주말까지 기다리기엔 너무 아쉬워.
+
+<br>
+
+> `Cindy` How'd it go with a blind date yesterday?
+>
+> `Jake` It went well, but I'm burnt out today.
+>
+> `Cindy` So what did you do?
+>
+> `Jake` Well, a lot of stuff, this and that.
+>
+> `Cindy` Come on! Can you elaborate on that?
+>
+> `Jake` Frankly, nothing speceial went on.
+>
+> `Jake` It's just that I got tired because I am after work.
+>
+> `Cindy` That's true. That's why I usually take a break on weekdays and make plans on weekends.
+>
+> `Jake`  But it's a bummer to wait until the weekend.
+
+<br>
+
+<br>
+
