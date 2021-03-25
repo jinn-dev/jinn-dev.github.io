@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : #"ko"
-title                    : "하루는 성실하게 인생은 되는대로"
+title                    : "JINNY DEVLOG"
 title_separator          : ""
-subtitle                 : "jinny in dev life" # site tagline that appears below site title in masthead
-name                     : "jinny"
-description              : "지극히 개인적인 블로그. 개발 공부, 생각과 일상을 기록하는 곳입니다."
+subtitle                 : "" # site tagline that appears below site title in masthead
+name                     : "JINNY"
+description              : "끄적끄적 낙서장"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "jinn-dev/jinn-dev" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
