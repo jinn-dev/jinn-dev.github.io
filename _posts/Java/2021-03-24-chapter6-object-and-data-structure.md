@@ -1,7 +1,7 @@
 ---
 title: "클린코드 6장. 객체와 자료구조"
 categories:
-  - CleanCode
+  - Java
 last_modified_at: 2021-03-24T22s:00:00+09:00
 toc_sticky: true
 toc: true

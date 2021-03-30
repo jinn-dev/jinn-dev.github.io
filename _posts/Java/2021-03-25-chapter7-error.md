@@ -1,7 +1,7 @@
 ---
 title: "클린코드 7장. 오류 처리"
 categories:
-  - CleanCode
+  - Java
 last_modified_at: 2021-03-25T22s:00:00+09:00
 toc_sticky: true
 toc: true
@@ -183,6 +183,8 @@ Checked Exception은 복구가 가능하다는 매커니즘을 가지고 있음
 즉, 오류 메시지에 정보를 담아 예외와 함께 던진다. (실패한 연산 이름 및 실패 유형 언급)
 
 
+
+
 ### 📌 호출자를 고려해 예외 클래스를 정의하라
 
 애플리케이션에서 오류 정의할 때 가장 중요한 관심사는 **오류를 잡아내는 방법**이 되야 한다.
@@ -335,6 +337,8 @@ public List<Employee> getEmployees() {
 
 
 NULL 객체 패턴 참고 - https://johngrib.github.io/wiki/null-object-pattern/
+
+Optional 사용 - https://www.daleseo.com/java8-optional-after/
 
 
 
