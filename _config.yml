@@ -130,7 +130,7 @@ author:
       url: "https://github.com/jinn-dev"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-       url: "https://instagram.com/jinguishappy"
+       #url: "https://instagram.com/jinguishappy"
 
 # Site Footer
 footer:

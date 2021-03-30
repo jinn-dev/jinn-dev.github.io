@@ -1,5 +1,5 @@
 ---
-title: "클린코드 8장. 경계"
+title: "클린코드 8장. 경계(작성중)"
 categories:
   - CleanCode
 last_modified_at: 2021-03-28T22s:00:00+09:00
@@ -48,7 +48,7 @@ Sensor s = sensors.get(sensorId);
 //good
 public class Sensors = {
     private Map sensors = new HashMap();
-    
+
     public Sensor getById(String id) {
         return (Sensor) sensors.get(id);
     }
@@ -82,7 +82,7 @@ Map 인스턴스를 공개 API의 인수로 넘기거나 반환값으로 사용�
    }
    ```
 
-   
+
 
 2. 테스트 케이스를 돌리면 Appender라는 뭔가가 필요하다는 오류가 발생한다.  
    문서엔 ConsoleAppender라는 클래스가 있어 ConsoleAppender를 생성한 후 테스트 케이스를 다시 돌린다.
@@ -97,7 +97,7 @@ Map 인스턴스를 공개 API의 인수로 넘기거나 반환값으로 사용�
    }
    ```
 
-   
+
 
 3. 이번에는 Appender에 출력 스트림이 없다는 사실을 발견한다. 구글 검색 후 다음과 같이 시도한다.
 
@@ -113,27 +113,27 @@ Map 인스턴스를 공개 API의 인수로 넘기거나 반환값으로 사용�
    }
    ```
 
-   
+
 
 4. 테스트 케이스를 여러 번 짜면서 log4 동작을 이해하고 다음과 같은 단위 테스트 케이스를 만들 수 있다.
 
    ```java
     public class LogTest {
         private Logger logger;
-   
+
         @Before
         public void initialize() {
             logger = Logger.getLogger("logger");
             logger.removeAllAppenders();
             Logger.getRootLogger().removeAllAppenders();
         }
-   
+
         @Test
         public void basicLogger() {
             BasicConfigurator.configure();
             logger.info("basicLogger");
         }
-   
+
         @Test
         public void addAppenderWithStream() {
             logger.addAppender(new ConsoleAppender(
@@ -141,7 +141,7 @@ Map 인스턴스를 공개 API의 인수로 넘기거나 반환값으로 사용�
                 ConsoleAppender.SYSTEM_OUT));
             logger.info("addAppenderWithStream");
         }
-   
+
         @Test
         public void addAppenderWithoutStream() {
             logger.addAppender(new ConsoleAppender(
@@ -151,7 +151,7 @@ Map 인스턴스를 공개 API의 인수로 넘기거나 반환값으로 사용�
     }
    ```
 
-   
+
 
 
 
@@ -165,4 +165,4 @@ Map 인스턴스를 공개 API의 인수로 넘기거나 반환값으로 사용�
 
 
 
-### 
+###
