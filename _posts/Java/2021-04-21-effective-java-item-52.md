@@ -156,8 +156,8 @@ classifier처럼 의도하지 않은 동작이 발생할 수 있다. 안전하�
 
    ArrayList에서 remove를 다중정의 했기 때문에 예상했던 결과와 다르게 나온다.
 
-   set.remove(i)의 시그니처는 remove(Object)로 다중 정의된 메서드가 없어 정상적인 결과가 나온다. 
-   list.remove(i)는 다중정의된 remove(int index)를 선택하여 index 위치에 따른 원소를 제거하기 때문에 결과가 다르게 나온다. 이 문제는 인수를 형변환하여 해결 가능하다.
+   `set.remove(i)`의 시그니처는 `remove(Object)`로 다중 정의된 메서드가 없어 정상적인 결과가 나온다. 
+   `list.remove(i)`는 다중정의된 `remove(int index)`를 선택하여 index 위치에 따른 원소를 제거하기 때문에 결과가 다르게 나온다. 이 문제는 인수를 형변환하여 해결 가능하다.
 
    ```java
    public class SetList {
@@ -223,8 +223,9 @@ Error:(13, 18) java: incompatible types: cannot infer type-variable(s) T
 
 컴파일할 때 명령줄 스위치로 `-Xlint:overloads`를 지정하면 이런 종류의 다중정의를 경고해 줄 것이다.
 
-String 클래스를 보면 contentEquals 메소드는 forward ❓시켜 버리는 방법을 선택했다. 
-foward는 상대적으로 더 특수한 다중정의 메서드에서 덜 특수한(일반적인) 다중정의 메서드로 일을 넘겨 버리는 것. 아래는 같은 객체를 입력하면 동일한 기능을 수행한다. 
+String 클래스를 보면 contentEquals 메소드는 forward ❓시켜 버리는 방법을 선택했다. foward는 상대적으로 더 특수한 다중정의 메서드에서 덜 특수한(일반적인) 다중정의 메서드로 일을 넘겨 버리는 것. 
+
+아래는 같은 객체를 입력하면 동일한 기능을 수행한다. 
 
 ```java
 public boolean contentEquals(StringBuffer sb) {
@@ -247,3 +248,6 @@ public static String valueOf(char data[]) {
 
 
 
+### 참고자료 
+
+http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9788966262281&orderClick=LEa&Kc= 

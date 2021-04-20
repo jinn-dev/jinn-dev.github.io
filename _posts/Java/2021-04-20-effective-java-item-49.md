@@ -30,6 +30,7 @@ comments: true
 ### 📌공개 API는 반드시 문서화 해라.
 
 `public`과 `protected`는 매개변수의 제약, 매개변수 값이 잘못되었을 때 던지는 예외를 문서화 해야 한다. 
+
 → `@thorws` 자바독 태그 사용(아이템 74) 
 
 - IllegalArgumentException
@@ -69,8 +70,9 @@ comments: true
 this.strategy = Objects.requireNonNull(strategy, "ErrorMessage");
 ```
 
-자바 9는 Obejcts에 범위 검사 기능도 더해졌지만, requireNonNull 처럼 유연하지 않다. 
-(checkFromIndexSize, checkFromToIndex, checkIndex)
+자바 9는 Obejcts에 범위 검사 기능도 더해졌지만, requireNonNull 처럼 유연하지 않다.
+
+ex. checkFromIndexSize, checkFromToIndex, checkIndex
 
 1. 예외 메시지 지정 불가
 2. 리스트와 배열 전용으로 설계되어 다른 컬렉션 사용 불가
@@ -95,8 +97,10 @@ private static void sort(long a[], int offset, int length) {
 #### 일반적인 유효성 검사와 다른 점?
 
 1. 실패하면 AssertionError를 던진다.
+
 2. 런타임에 아무런 효과도, 아무런 성능 저하 없음
-   (단, java를 실행할 때 명령줄에서 -ea 혹은 --enableassertions 플래그를 설정하면 런타임에 영향을 준다).
+   
+   (단, java를 실행할 때 명령줄에서 `-ea` 혹은` --enableassertions` 플래그를 설정하면 런타임에 영향을 준다).
 
 
 
@@ -105,8 +109,8 @@ private static void sort(long a[], int offset, int length) {
 유효성 검사 비용이 지나치게 높거나, 실용적이지 않은 경우, 
 혹은 **계산 과정에서 암묵적으로 검사가 수행되는 경우**가 있다.
 
-Collections.sort(List)는 정렬 과정에서 객체 비교가 자연스럽게 이루어진다.
-예외처리로 ClassCastException을 던지기 때문에 비교 전에 검사를 안해도 된다.
+`Collections.sort(List)`는 정렬 과정에서 객체 비교가 자연스럽게 이루어진다.
+예외처리로 `ClassCastException`을 던지기 때문에 비교 전에 검사를 안해도 된다.
 
 하지만 암묵적인 검사에 의존할 경우 **실패 원자성**을 해칠 수 있으니 주의하자.
 
