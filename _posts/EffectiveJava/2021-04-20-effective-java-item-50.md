@@ -1,7 +1,7 @@
 ---
 title: "아이템50. 적시에 방어적 복사본을 만들라"
 categories:
-  - Java
+  - EffectiveJava
 last_modified_at: 2021-04-20T22s:00:00+09:00
 toc_sticky: true
 toc: true

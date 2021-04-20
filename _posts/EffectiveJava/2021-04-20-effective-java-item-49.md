@@ -1,7 +1,7 @@
 ---
 title: "아이템 49. 매개변수가 유효한지 검사하라"
 categories:
-  - Java
+  - EffectiveJava
 last_modified_at: 2021-04-20T22s:00:00+09:00
 toc_sticky: true
 toc: true

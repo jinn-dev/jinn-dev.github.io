@@ -1,7 +1,7 @@
 ---
 title: "아이템51. 메서드 시그니처를 신중히 설계하라"
 categories:
-  - Java
+  - EffectiveJava
 last_modified_at: 2021-04-21T22s:00:00+09:00
 toc_sticky: true
 toc: true
